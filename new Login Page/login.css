@@ -1,0 +1,102 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ height: 100vh;
+ width: 100vw;
+ background: linear-gradient(45deg, orange, green);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.box{
+ background-color: white;
+ height: 450px;
+ width: 300px;
+ overflow: hidden;
+ position: relative;
+}
+.box form {
+ position: absolute;
+ top: 50px;
+ transition: 1s;
+}
+
+p {
+ font-size: 30px;
+ text-align: center;
+ padding: 20px;
+ text-decoration: underline;
+}
+
+input {
+ display: block;
+ width: 250px;
+ margin: 25px;
+ padding: 10px;
+ outline: none;
+ border: none;
+ border-bottom: 2px solid greenyellow;
+ background: transparent;
+}
+
+.btn {
+ width: 100%;
+ height: 50px;
+ display: flex;
+ justify-content: center;
+}
+
+button {
+ height: 35px;
+ width: 100px;
+ margin: 20px;
+ background: linear-gradient(45deg, orange, green);
+ border: 1px solid greenyellow;
+ border-radius: 5px;
+ color: white;
+ font-size: 20px;
+ font-weight: 700;
+ cursor: pointer;
+}
+#form2{
+ left: 350px;
+}
+#form3{
+ left: 350px;
+}
+.step{
+ height: 50px;
+ width: 100%;
+ display: flex;
+ margin: 0 auto;
+ align-items: center;
+ box-shadow: 0 -1px 5px -1px black;
+ position: relative;
+}
+.column{
+ width: 100px;
+ text-align: center;
+ position: relative;
+}
+#progress{
+ position: absolute;
+ width: 100px;
+ height: 100%;
+ background: linear-gradient(90deg, orange, green);
+ transition: 1s;
+}
+#progress::after{
+ content: '';
+ height: 0;
+ width: 0;
+ border-top: 25px solid transparent;
+ border-bottom: 25px solid transparent;
+ position: absolute;
+ top: 0;
+ right: -20px;
+ border-left: 20px solid green;
+}
