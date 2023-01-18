@@ -11,17 +11,17 @@ let back2 = document.getElementById('back2');
 
 let progress = document.getElementById('progress');
 
-form1btn.onclick = () =>{
+form1btn.onclick = () => {
  form1.style.left = '-300px';
  form2.style.left = '0px';
  progress.style.width = '200px';
 }
-back1.onclick = () =>{
+back1.onclick = () => {
  form1.style.left = '0px';
  form2.style.left = '350px';
  progress.style.width = '100px';
 }
-form2btn.onclick = () =>{
+form2btn.onclick = () => {
  form2.style.left = '-300px';
  form3.style.left = '0px';
  progress.style.width = '300px';
